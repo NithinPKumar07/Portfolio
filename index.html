@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+
+    <div class="nav-wrapper">   
+        <div class="left-side">
+            <div class="nav-link-wrapper active-nav-link">
+                <a href="index.html">Home</a>
+            </div>
+
+            <div class="nav-link-wrapper">
+                <a href="about.html">About</a>
+            </div>
+
+        </div>
+        
+        <div class="right-side">
+            <div class="brand">
+                <div>NITHIN PRASANNA KUMAR</div>
+            </div>    
+        
+        </div>
+
+    </div>
+
+        <div class="content-wrapper">
+                <div class="portfolio-items-wrapper">
+                                        
+
+                    <div class="portfolio-item-wrapper">
+                        <div class="portfolio-img-background" style="background-image:url(images/portfolio2.jpg)">
+                        </div>
+
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                <img src="images/logos/KantarLogo.png">
+                            </div>
+                            
+                            <div class="subtitle">
+
+                                This is the start of my career as a developer. I worked here as a software developer for one year, where I learnt Android development and also HTML, CSS and JS.
+
+                            </div>
+
+                        </div>
+                    
+                    </div>
+
+                    <div class="portfolio-item-wrapper">
+                        <div class="portfolio-img-background" style="background-image:url(images/CMS.jpg)">
+                        </div>
+
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                <img src="images/logos/cms.png">
+                            </div>
+                            
+                            <div class="subtitle">
+
+                                I successfully completed my Bachelors Degree in Electrical and Electronics Engineering from this wonder full college situated in a beautiful part of Coimbatore, Tamil Nadu.
+
+                            </div>
+
+                        </div>
+                    
+                    </div>
+
+                    <div class="portfolio-item-wrapper">
+                        <div class="portfolio-img-background" style="background-image:url(images/mit.jpg)">
+                        </div>
+
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                <img src="images/logos/MIT.png">
+                            </div>
+                            
+                            <div class="subtitle">
+
+                                I completed my graduate diploma in Software Development and Web Applications from Manukau Institute of Technology, one of the finest college in Auckland, situated in the heart of Manukau.
+
+                            </div>
+
+                        </div>
+                    
+                    </div>
+
+                    <div class="portfolio-item-wrapper">
+                        <div class="portfolio-img-background" style="background-image:url(images/portfolio8.jpg)">
+                        </div>
+
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                <img src="images/logos/AucklandCouncil.png">
+                            </div>
+                            
+                            <div class="subtitle">
+
+                                I have worked here as a Lagom contract employee. This position was to fulfill the role of a Digital Administrator Role.
+
+                            </div>
+
+                        </div>
+                    
+                    </div>
+
+
+
+                    <div class="portfolio-item-wrapper">
+                        <div class="portfolio-img-background" style="background-image:url(images/portfolio3.jpg)">
+                        </div>
+
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                <img src="images/logos/HGS.png">
+                            </div>
+                            
+                            <div class="subtitle">
+
+                                I have worked as a technical support engineer here. Improved my skills in handling various customers.
+
+                            </div>
+
+                        </div>
+                    
+                    </div>
+
+                    <div class="portfolio-item-wrapper">
+                        <div class="portfolio-img-background" style="background-image:url(images/portfolio10.jpg)">
+                        </div>
+
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                <img src="images/logos/MaxInsurance.png">
+                            </div>
+                            
+                            <div class="subtitle">
+
+                                I have built survey websites for Max Insurance Pvt. Ltd. by using NIPO-ODIN software at Kantar IMRB International.
+
+                            </div>
+
+                        </div>
+                    
+                    </div>
+
+
+
+
+
+                </div>
+
+        </div>
+
+        
+</div>
+
+</body>
+
+<script>
+
+const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+    portfolioItems.forEach(portfolioItem => {
+        portfolioItem.addEventListener('mouseover',() =>{ 
+            portfolioItem.childNodes[1].classList.add('img-darken');
+        })   
+
+        portfolioItem.addEventListener('mouseout',() =>{ 
+            portfolioItem.childNodes[1].classList.remove('img-darken');
+        })   
+
+
+    })
+
+</script>
+
+</html>
